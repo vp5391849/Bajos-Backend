@@ -1,23 +1,22 @@
+// const { update } = require("../../models/contractor");
 const Contractors = require("../../models/contractor");
 
 let endpoint = {
   name: "",
-  method: "put",
+  method: "patch",
   run: (req, res) => {
-    let { id } = req.query;
-    let update = req.body;
+    const { id } = req.query;
+    const update = req.body;
 
-    Contractors.findOne({ ID: id }, (err, data) => {
+    Contractors.updateOne({ ID: id }, update, { new: true }, (err, data) => {
       if (err) return err;
-      if (!data) res.send(data);
-      for (key in update) {
-        data[key] = update[key]
-      }
-      console.log(data);
+      if (!data.length) return res.send(data);
+
+      data.append(update);
+      // console.log(data)
+      res.send(data);
       data.save();
-      res.send("data updated successfully");
     });
   },
 };
-
 module.exports = endpoint;
