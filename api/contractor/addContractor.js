@@ -22,22 +22,22 @@ if (!mobile || !email || !name  ){
    })
 }
 
-// let value = ()=>{
+let value = ()=>{
 
-//     if(canLogin === true){
-//    return password
-//     }
-//     else if(canLogin === false) {
-//     return password = '';
-//     }
+    if(password === String){
+   canLogin = true;
+    }
+    else if(password != String ) {
+   canLogin = false;
+    }
 
-//     }
+    }
 let contractor = new Contractor ({
         ID : createId(),
         Name : name,
         Email : email,
         Mobile : mobile,
-        Password : password,
+        Password : value(),
         Note : note,
         CanLogin : canLogin 
      

@@ -4,8 +4,8 @@ const Contractos = require('../../models/contractor')
 let endpoint = {
     name : '',
     method : 'get',
-    run : async (req,res)=>{
-        const data = await Contractos.find()
+    run :  (req,res)=>{
+        const data =  Contractos.find()
         res.json(data)
     }
 }
