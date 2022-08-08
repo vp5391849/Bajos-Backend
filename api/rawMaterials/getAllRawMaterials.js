@@ -9,7 +9,8 @@ let endpoint = {
 if (err) return err;
 if (!data.length) return res.status(404).send()
 
-res.send(data)
+return  res.send(data)
+
         })
 
     }
