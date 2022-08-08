@@ -1,12 +1,11 @@
-const  {model , Schema} = require('mongoose')
+const { model, Schema } = require("mongoose");
 
 module.exports = model(
-    "Raw Material",
-    new Schema ({
-        SR : Number,
-        RMKU : Number,
-        Name : String,
-        MeasureUnit : String
-
-    })
-)
+  "Raw Material",
+  new Schema({
+    ID: String,
+    RMKU: String,
+    Name: String,
+    MeasureUnit: String,
+  })
+);
