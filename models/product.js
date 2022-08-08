@@ -6,8 +6,10 @@ module.exports = model (
 
         ID : String,
         Name : String,
-        SR : Number,
-        RawMaterials : Array 
+       SKU : String,
+        RawMaterials : Array,
+        UsedQuantity : String
+        
 
     })
 )

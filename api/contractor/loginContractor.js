@@ -24,11 +24,9 @@ let endpoint = {
           
 
             res.send(data)
-            // if(Contractors.findOne({CanLogin : true}))
+          
         })
-        if (canLogin = true){
-         
-        }
+        
     }
 }
 

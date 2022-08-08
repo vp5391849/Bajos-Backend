@@ -28,4 +28,5 @@ let endpoint = {
       
     }
 }
-module.exports = endpoint
+
+module.exports = endpoint;
