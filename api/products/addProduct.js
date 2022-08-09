@@ -11,6 +11,11 @@ let endpoint = {
         message: "required fields",
       });
     }
+const rawMaterials = RawMaterial.find().exec(function (err,data){
+  if(err) return err
+  data.map()
+})
+.then(data => console.log(data))
 
 
     let product = new Product({
@@ -18,11 +23,11 @@ let endpoint = {
       SKU: sku,
       Name: name,
       UsedQuantity: usedQuantity,
-      RawMaterials: []
+      RawMaterials: [rawMaterials]
     });
-    // product.save();
+    product.save();
     console.log(product);
-    res.send([createID(), sku, name, usedQuantity]);
+    res.send([createID(), sku, name, usedQuantity, [rawMaterials]]);
   },
 };
 
