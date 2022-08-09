@@ -1,5 +1,5 @@
 const Product = require("../../models/product");
-const RawMaterial = require("../rawMaterials/getAllRawMaterials");
+const RawMaterial = require("../../models/rawMaterial");
 
 let endpoint = {
   name: "",
@@ -11,19 +11,18 @@ let endpoint = {
         message: "required fields",
       });
     }
- 
+
 
     let product = new Product({
       ID: createID(),
       SKU: sku,
       Name: name,
       UsedQuantity: usedQuantity,
-      RawMaterials: [RawMaterial.run],
-
+      RawMaterials: []
     });
-    product.save()
-    console.log(product)
-    res.send([createID(),sku,name,usedQuantity, [RawMaterial.run]])
+    // product.save();
+    console.log(product);
+    res.send([createID(), sku, name, usedQuantity]);
   },
 };
 

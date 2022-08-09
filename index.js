@@ -3,8 +3,9 @@ const mongoose = require('mongoose')
 const path = require('path')
 const fs = require('fs')
 const app = express()
-mongoose.connect(require('./token.json').Mongo)
+ mongoose.connect(require('./token.json').Mongo)
 .then(()=> console.log('mongoose connected'))
+
 app.use(express.json())
 
 
