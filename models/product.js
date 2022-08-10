@@ -6,7 +6,7 @@ module.exports = model(
     ID: String,
     Name: String,
     SKU: String,
-    RawMaterials: Array,
-    UsedQuantity: Array
+    RawMaterials: String,
+    UsedQuantity: String
   })
 );
