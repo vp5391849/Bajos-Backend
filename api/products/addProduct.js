@@ -11,22 +11,7 @@ let endpoint = {
         message: "required fields",
       });
     }
-  //  const rawMaterials = RawMaterial.find( (err,data)=>{
-  //     if (err) return err;
-  //     if (!data.length) return res.status(404).send()
-      
-  //     return  res.send(data)
-      
-  //             })
-
-
-// function value(arr, prop) {
-// if(!arr.length) return res.status(404).send()
-//   // extract value from property
-//   let values = arr.map(item => item[prop]);
-
-//   return values;
-// }
+ 
 
     let product = new Product({
       ID: createID(),
