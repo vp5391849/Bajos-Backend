@@ -22,8 +22,8 @@ let endpoint = {
     });
 // .then(data => console.log(data))
 
-    // product.save();
-    console.log(product);
+    product.save();
+    // console.log(product);
     res.send([createID(), sku, name, usedQuantity, rawMaterial]);
   },
 };
