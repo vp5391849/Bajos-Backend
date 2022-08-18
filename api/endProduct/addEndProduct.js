@@ -9,12 +9,16 @@ let endpoint = {
       expectedRemRawMaterial,
       receivedProduct,
       receivedRawMaterial,
+      contractor,
+      processProduct, 
+      product
     } = req.body;
     if (
       !expectedProduct ||
       !receivedProduct ||
       !expectedRemRawMaterial ||
-      !receivedRawMaterial
+      !receivedRawMaterial ||
+      !contractor
     ) {
       res.status(404).json({
         message: "required fields",
@@ -27,6 +31,9 @@ let endpoint = {
       ExpectedRemRawMaterial: expectedRemRawMaterial,
       ReceivedProduct: receivedProduct,
       ReceivedRawMaterial: receivedRawMaterial,
+      Contractor : contractor,
+      ProcessProducts : processProduct,
+      ProductName : product
     });
     endProduct.save();
     res.send([
@@ -35,6 +42,9 @@ let endpoint = {
       expectedRemRawMaterial,
       receivedProduct,
       receivedRawMaterial,
+      contractor,
+      processProduct,
+      product
     ]);
   },
 };

@@ -1,10 +1,10 @@
-const{mode, Schema} = require('mongoose')
+const{model, Schema} = require('mongoose')
 
 module.exports = model (
     "Manufacture Product",
     new Schema({
        ID : String,
-       RMKU : rmku,
+       RMKU : String,
        RawMaterialName : String,
        Quantity : String,
        Price : Number,

@@ -1,4 +1,4 @@
-const {model, Schema} = requrire('mongoose')
+const {model, Schema} = require('mongoose')
 
 module.exports = model (
     "End Product", 
@@ -7,6 +7,9 @@ ID : String,
 ExpectedProduct : Number,
 ExpectedRemRawMaterial : String,
 ReceivedProduct : Number,
-ReceivedRawMaterial : Number
+ReceivedRawMaterial : Number,
+ProcessProducts : String,
+Contractor : String,
+ProductName : String
     })
 )
