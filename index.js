@@ -9,7 +9,11 @@ const app = express()
 app.use(express.json())
 
 
-
+app.use(() => (req, res, next) =>{
+    res.header("Access-Control-Allow-Origin", "http://localhost:5000/");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
 
 
 fs.readdir('api', (err, folders)=>{
@@ -35,6 +39,6 @@ for (const folder of folders){
 
 
 
-app.listen(3000, ()=>{
+app.listen(5000, ()=>{
     console.log('server started')
 })
