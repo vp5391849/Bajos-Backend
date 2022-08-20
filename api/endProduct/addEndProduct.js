@@ -1,7 +1,7 @@
 const EndProduct = require("../../models/endProduct");
 
 let endpoint = {
-  name: "",
+  name: "addEndProduct",
   method: "post",
   run: (req, res) => {
     const {

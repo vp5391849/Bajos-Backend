@@ -3,7 +3,7 @@ const { createIndexes } = require('../../models/contractor')
 const Contractor = require('../../models/contractor')
 
 let endpoint = {
-    name : '',
+    name : 'addContractor',
     method : 'post',
     run : (req,res)=>{
 

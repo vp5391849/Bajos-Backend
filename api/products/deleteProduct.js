@@ -1,7 +1,7 @@
 const Product = require('../../models/product')
 
 let endpoint = {
-    name : '',
+    name : 'deleteProduct',
     method : 'delete',
     run : (req,res)=>{
         const {id} = req.query

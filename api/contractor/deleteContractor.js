@@ -3,7 +3,7 @@ const contractor = require("./../../models/contractor");
 const Contractors = require("./../../models/contractor");
 
 let endpoint = {
-  name: "",
+  name: "deleteContractor",
   method: "delete",
   run: (req, res) => {
     const { id } = req.query;

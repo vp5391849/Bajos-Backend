@@ -2,7 +2,7 @@ const user = require('../../models/user')
 
 
 let endpoint = {
-    name : "",
+    name : "userLogin",
     method : 'get',
     run : (req,res)=>{
         const {mobile, password} = req.query

@@ -2,7 +2,7 @@ const RawMaterial = require('../../models/rawMaterial')
 
 
 let endpoint = {
-    name : '',
+    name : 'getRawMaterials',
     method : 'get',
     run : (req,res)=>{
 

@@ -1,7 +1,7 @@
 const Contractors = require('../../models/contractor')
 
 let endpoint = {
-    name : '',
+    name : 'contractorLogin',
     method : 'get',
     run : (req,res)=>{
 

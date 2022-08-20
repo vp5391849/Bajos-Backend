@@ -26,8 +26,8 @@ for (const folder of folders){
 
         for (const file of files){
             let endpoint = require(path.resolve('./api/' + folder + "/" + file))
-            app[endpoint.method]('/api/'+ folder +  endpoint.name, (req,res)=> endpoint.run(req,res))
-        //    console.log('/api/'+ folder +  endpoint.name) 
+            app[endpoint.method]('/api/'+ folder + "/" + endpoint.name, (req,res)=> endpoint.run(req,res))
+           console.log('/api/' + folder + "/" + endpoint.name) 
         //    console.log('final')
         }
     })

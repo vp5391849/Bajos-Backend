@@ -2,7 +2,7 @@ const Product = require("../../models/product");
 const rawMaterial = require("../../models/rawMaterial");
 
 let endpoint = {
-  name: "",
+  name: "getRawMaterialNames",
   method: "get",
   run: (req, res) => {
     rawMaterial.find((err, data) => {

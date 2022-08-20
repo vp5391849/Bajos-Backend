@@ -2,7 +2,7 @@ const Product = require("../../models/product");
 // const rawMaterial = require("../../models/rawMaterial");
 
 let endpoint = {
-  name: "",
+  name: "getProductById",
   method: "get",
   run: (req, res) => {
    

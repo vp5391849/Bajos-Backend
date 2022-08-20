@@ -1,7 +1,7 @@
 const RawMaterial = require("../../models/rawMaterial");
 
 let endpoint = {
-  name: "",
+  name: "deleteRawMaterial",
   method: "delete",
   run: (req, res) => {
     const { id } = req.query;

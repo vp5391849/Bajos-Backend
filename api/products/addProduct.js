@@ -2,7 +2,7 @@ const Product = require("../../models/product");
 const RawMaterial = require("../../models/rawMaterial");
 
 let endpoint = {
-  name: "",
+  name: "addProduct",
   method: "post",
   run: (req, res) => {
     const { sku, usedQuantity, name, rawMaterial } = req.body;

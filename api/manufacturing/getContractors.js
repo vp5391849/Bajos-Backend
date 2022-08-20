@@ -2,7 +2,7 @@ const Contractors = require('../../models/contractor')
 
 
 let endpoint = {
-    name : '',
+    name : 'getContractorNames',
     method : 'get',
     run : (req,res)=>{
         Contractors.find((err,data)=>{

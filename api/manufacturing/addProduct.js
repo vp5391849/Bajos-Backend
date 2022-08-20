@@ -1,8 +1,8 @@
 const Manufacture = require("../../models/manufactureProduct");
 
 let endpoint = {
-  name: "",
-  method: "get",
+  name: "addManufactureProduct",
+  method: "post",
   run: (req, res) => {
     const { name, rmku, quantity, labourCost, price } = req.body;
     if (!name || !rmku || !quantity || !price) {

@@ -2,7 +2,7 @@ const RawMaterial = require("../../models/rawMaterial");
 // const { createID } = require("../../createId");
 
 let endpoint = {
-  name: "",
+  name: "addRawMaterial",
   method: "post",
   run: (req, res) => {
     const { name, rmku, measureUnit } = req.body;

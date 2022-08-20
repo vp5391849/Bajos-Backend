@@ -1,7 +1,7 @@
 const EndProduct = require('../../models/endProduct')
 
 let endpoint = {
-    name : '',
+    name : 'getProductNames',
     method : 'get',
     run : (req,res)=>{
         EndProduct.find((err,data)=>{
@@ -14,8 +14,8 @@ res.send(productName)
     }
 }
 
-function value (arr,prop){
-    let values = arr.map(item => item[prop])
+function value (arr){
+    let values = arr.map(item => item)
     return values
 }
 

@@ -2,7 +2,7 @@ const Manufacture = require('../../models/manufactureProduct')
 
 
 let endpoint = {
-    name : '',
+    name : 'getManufactureProducts',
     method : 'get',
     run : (req,res)=>{
         Manufacture.find((err,data))

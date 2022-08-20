@@ -2,7 +2,7 @@ const Contractors = require('./../../models/contractor')
 
 
 let endpoint = {
-    name : '',
+    name : 'contractorById',
     method : 'get',
     run : (req,res)=>{
         const { id } = req.query 

@@ -3,7 +3,7 @@ const { model } = require("mongoose")
 const User = require("../../models/user")
 
 let endpoint = {
-    name : ":id",
+    name : "createUser",
     method : "post",
     run : (req,res)=>{
         const {
